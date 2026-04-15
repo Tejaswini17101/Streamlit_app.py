@@ -34,6 +34,8 @@ st.divider()
 
 predictbutton = st.button("Predict!")
 
+st.divider()
+
 if predictbutton:
 
     gender_selected = 1 if gender == "Female" else 0
@@ -48,6 +50,8 @@ if predictbutton:
 
     predicted = "Yes" if prediction == 1 else "No"
 
+    st.balloons()
+    
     st.write(f"Predicted: {predicted}")
 
 else:
